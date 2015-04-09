@@ -1,0 +1,200 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title>Chuck's Chocolate & Candy Store</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <script src="../_scripts/respond.min.js"></script>
+    <![endif]-->
+    <link href="_css/main.css" rel="stylesheet" media="screen, projection">
+    <link href="_css/range.css" rel="stylesheet" media="screen, projection">
+</head>
+<body id="blogPage">
+    <form name="form1" method="post" action="">
+        <header class="blogHeader pageHeader"></header>
+        <div id="contentWrapper">
+            <article id="mainContent">
+                <h1>Chuck's Candy Cauldren</h1>
+                <article class="post">
+                    <h2><a href="#">Popular Candy. Great prices.</a></h2>
+                    <p>
+                        Welcome to the Chuck's Chocolate & Candy Store. We have a wide assortments of decadent chocolates and candy to choose from. Buy your favorite sweets
+                        today or save your items for a later purchase!
+                    </p>
+                </article>
+                <article id="gallery" class="post">
+
+                    <div id="candy1" class="painting">
+                        <img src="_images/paintings/JollyRancher.jpg" width="190" height="190" alt="Jolly Rancher">
+                        <p>Jolly Rancher - <span class="price">$10</span><br /><a href="" onclick='MarkAsFavorite(this)' alt="Mark as Favorite" id="cbJollyRancher" data-candyname="Jolly Rancher" >Favorite</a></p>
+                    </div>
+
+                    <div id="candy2" class="painting">
+                        <img src="_images/paintings/skittles.jpg" width="190" height="190" alt="Skittles">
+                        <p>Skittles - <span class="price">$15</span><br /><a href="" onclick='MarkAsFavorite(this)' alt="Mark as Favorite" id="cbSkittles" data-candyname="Skittles">Favorite</a></p>
+                    </div>
+
+                    <div id="candy3" class="painting">
+                        <img src="_images/paintings/WonkaMix.jpg" width="190" height="190" alt="Wonka Mix">
+                        <p>Wonka Mix - <span class="price">$50</span><br /><a href="" onclick='MarkAsFavorite(this)' alt="Mark as Favorite" id="cbWonkaMix" data-candyname="Wonka Mix">Favorite</a></p>
+                    </div>
+
+                    <div id="candy4" class="painting">
+                        <img src="_images/paintings/gummybears.png" width="190" height="190" alt="Gummy Bears">
+                        <p>Gummy Bears - <span class="price">$15</span><br /><a href="" onclick='MarkAsFavorite(this)' alt="Mark as Favorite" id="cbGummyBears" data-candyname="Gummy Bears">Favorite</a></p>
+                    </div>
+
+                    <div id="candy5" class="painting">
+                        <img src="_images/paintings/nowandlater.jpg" width="190" height="190" alt="Now & Later">
+                        <p>Now & Later - <span class="price">$10</span><br /><a href="" onclick='MarkAsFavorite(this)' alt="Mark as Favorite" id="cbNowAndLater" data-candyname="Now &amp; Later">Favorite</a></p>
+                    </div>
+
+                    <div id="candy6" class="painting">
+                        <img src="_images/paintings/peanutmms.png" width="190" height="190" alt="Peanut M&Ms">
+                        <p>Peanut M&Ms- <span class="price">$40</span><br /><a href="" onclick='MarkAsFavorite(this)' alt="Mark as Favorite" id="cbPeanutMMs" data-candyname="Peanut M&amp;Ms">Favorite</a></p>
+                    </div>
+
+                    <div id="candy7" class="painting">
+                        <img src="_images/paintings/poprocks.png" width="190" height="190" alt="Pop Rocks">
+                        <p>Pop Rocks- <span class="price">$25</span><br /><a href="" onclick='MarkAsFavorite(this)' alt="Mark as Favorite" id="cbPopRocks" data-candyname="Pop Rocks">Favorite</a></p>
+                    </div>
+
+                    <div id="candy8" class="painting">
+                        <img src="_images/paintings/pushpop.png" width="190" height="190" alt="Push Pops">
+                        <p>Push Pops- <span class="price">$35</span><br /><a href="" onclick='MarkAsFavorite(this)' alt="Mark as Favorite" id="cbPushPops" data-candyname="Push Pops">Favorite</a></p>
+                    </div>
+
+                    <div id="candy9" class="painting">
+                        <img src="_images/paintings/reeses.png" width="190" height="190" alt="Reeses">
+                        <p>Reeses- <span class="price">$40</span><br /><a href="" onclick='MarkAsFavorite(this)' alt="Mark as Favorite" id="cbReeses" data-candyname="Reeses">Favorite</a></p>
+                    </div>
+
+                    <div id="candy10" class="painting">
+                        <img src="_images/paintings/starburst.png" width="190" height="190" alt="Starburst">
+                        <p>Starburst- <span class="price">$40</span><br /><a href="" onclick='MarkAsFavorite(this)' alt="Mark as Favorite" id="cbStarburst" data-candyname="Starburst">Favorite</a></p>
+                    </div>
+
+                    <div id="candy11" class="painting">
+                        <img src="_images/paintings/tootsieroll.jpg" width="190" height="190" alt="Tootsie Rolls">
+                        <p>Tootsie Rolls- <span class="price">$30</span><br /><a href="" onclick='MarkAsFavorite(this)' alt="Mark as Favorite" id="cbTootsieRolls" data-candyname="Tootsie Rolls">Favorite</a></p>
+                    </div>
+
+                    <div id="candy12" class="painting">
+                        <img src="_images/paintings/Twizzlers.jpg" width="190" height="190" alt="Twizzlers">
+                        <p>Twizzlers- <span class="price">$10</span><br /><a href="" onclick='MarkAsFavorite(this)' alt="Mark as Favorite" id="cbTwizzlers" data-candyname="Twizzlers">Favorite</a></p>
+                    </div>
+
+                </article>
+            </article>
+            <aside>
+                <section class="info">
+                    <div class="widget">
+                        <h2>Price Slider</h2>
+                        <p>
+                            <input id="slider" type="range" min="10" max="50" step="5" value="50" onchange="printValue('slider','rangeValue')" />
+                            <input id="rangeValue" type="text" size="2" style="display:none;" />
+                            <span id="lblFindings">0 of 0 items shown</span>
+                        </p>
+                    </div>
+                    <div id="favorites" class="widget">
+                        <h2>Favorites</h2>
+                        <ul id="faves"></ul>
+                    </div>
+                </section>
+            </aside>
+        </div>
+        <footer id="pageFooter" class="cf">
+            <nav class="footerNav">
+                <h3>Chuck's Candy Cauldren</h3>
+            </nav>
+            <p>&copy;Copyright  Chuck's Candy Cauldren &amp; Design.  All rights reserved. <a href="_source/privacy.htm" title="privacy statement">Privacy Statement</a> |<a href="_source/legal.htm" title="legal terms"> Legal Terms and Conditions</a> |<a href="_source/disclosures.htm" title="student outcomes and disclosures"> Student Outcomes/Disclosures</a></p>
+        </footer>
+    </form>
+    <script type="text/javascript" src="_scripts/jquery.ndd.js"></script>
+    <script type="text/javascript" src="_scripts/dragdrop.js"></script>
+    <script>
+
+        function printValue(sliderID, textbox) {
+            var x = document.getElementById(textbox);
+            var y = document.getElementById(sliderID);
+            //the original code did not check to see it it got an X or Y value
+            if (x && y) {
+                x.value = y.value;
+            }
+        }
+
+        window.onload = function () {
+            printValue('slider', 'rangeValue')
+        }
+
+    </script>
+    <script>
+        $('#candy1').data({ id: 1, price: 10 });
+        $('#candy2').data({ id: 2, price: 15 });
+        $('#candy3').data({ id: 3, price: 50 });
+        $('#candy4').data({ id: 4, price: 15 });
+        $('#candy5').data({ id: 5, price: 10 });
+        $('#candy6').data({ id: 6, price: 40 });
+        $('#candy7').data({ id: 7, price: 25 });
+        $('#candy8').data({ id: 8, price: 35 });
+        $('#candy9').data({ id: 9, price: 40 });
+        $('#candy10').data({ id: 10, price: 40 });
+        $('#candy11').data({ id: 11, price: 30 });
+        $('#candy12').data({ id: 12, price: 10 });
+
+        $(document).ready(function () {
+            var theValue;
+            $("#slider").change(function () {
+                theValue = $("#rangeValue").val();
+                filterItems(theValue);
+            });
+            //we also want it to fire the first time to set the values
+            filterItems($("#slider").prop("max"));
+        });
+
+        function filterItems(priceCriteria) {
+            var AllItems = $('.painting').length;
+            //using jquery here does not work due to the easing (opacity) may still be playing
+            //var ShownItems = $('.painting:visible').length;
+            var ShownItems = 0;
+
+            $.each($('#gallery div'), function (i, item) {
+                $item = $(item);
+                itemData = $item.data();
+                if (itemData.price <= priceCriteria) {
+                    $item.show(1000);
+                    ShownItems++;
+                    itemData.matching = true;
+                }
+                else {
+                    $item.hide(500);
+                    itemData.matching = false;
+                }
+            });
+
+            $("#lblFindings").text(ShownItems + ' of ' + AllItems + ' items shown');
+        }
+
+        
+        function MarkAsFavorite(itm) {
+            debugger;
+            var name = itm.dataset['candyname'];
+            var favList = $("#faves")
+            prevFavItem = $('<li />', {
+                text:  name,
+                data: {name : name}
+            }).appendTo(favList);
+            $('#favorites').css('background-color', startingColor);
+            saveFaves();            
+            return false;
+        }
+    </script>
+</body>
+</html>
